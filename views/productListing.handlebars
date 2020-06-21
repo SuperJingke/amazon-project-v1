@@ -1,0 +1,16 @@
+<h2>Product Listing Page</h2>
+
+
+<div class="container">
+    {{#each data}}
+
+    <div class="">
+        Title : {{this.title}}
+        Description : {{this.description}}
+        Price : {{this.price}}
+        <img src="/img/{{this.imgPath}}">
+    </div>
+    {{/each}}
+
+</div>
+
