@@ -2,3 +2,8 @@ body
 {
     background-color: lightcoral;
 }
+
+img {
+    width: 20em;
+    height: 18em;
+}
