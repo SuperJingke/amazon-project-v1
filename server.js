@@ -32,6 +32,22 @@ app.get("/productListing",(req,res)=>{
 
 });
 
+app.get("/login", (req,res)=>{
+
+    res.render("login",{
+        title:"Sign-In"
+
+    })
+})
+
+app.get("/signUp", (req,res)=>{
+
+    res.render("signUp",{
+        title:"Create account"
+
+    })
+})
+
 
 const PORT = 3000;
 
