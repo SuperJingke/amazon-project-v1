@@ -1,9 +1,67 @@
+
 body
 {
-    background-color: lightcoral;
+    background-color: whitesmoke;
 }
 
 img {
     width: 20em;
     height: 18em;
+}
+
+/* ====style header==== */
+
+.header{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-color: #5D4C4C;
+}
+
+.header-bg{
+    width: auto;
+    margin: 0;
+    background-image: url(../img/header-bg.jpg) no-repeat center 0;
+    background-attachment: fixed;
+}
+
+.header-top{
+    position: absolute;
+}
+
+.header-top .container {
+    width: auto;
+    margin: 0 auto;
+}
+
+.header-logo{
+    float: left;
+    width: 80px;
+    height: 28px;
+    background: url(../img/logo.png) no-repeat;
+}
+
+.header-nav{
+    float: left;
+    padding: 10px 22px 0 20px;
+}
+
+.header-nav .item{
+    float: left;
+    line-height: 28px;
+    margin-right: 26px;
+}
+
+
+
+
+/* ===Product page ===*/
+
+.product-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.product-item{
+
 }

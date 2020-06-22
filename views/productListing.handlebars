@@ -1,14 +1,15 @@
-<h2>Product Listing Page</h2>
+<div>{{menu-bar}}</div>
 
-
-<div class="container">
+<div class="product-container">
     {{#each data}}
 
-    <div class="">
+    <div class="product-item">
+        
+        <img src="/img/{{this.imgPath}}">
         Title : {{this.title}}
         Description : {{this.description}}
         Price : {{this.price}}
-        <img src="/img/{{this.imgPath}}">
+        
     </div>
     {{/each}}
 
