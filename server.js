@@ -35,7 +35,7 @@ app.get("/productListing",(req,res)=>{
 app.get("/login", (req,res)=>{
 
     res.render("login",{
-        title:"Sign-In"
+        title:"Login"
 
     })
 })

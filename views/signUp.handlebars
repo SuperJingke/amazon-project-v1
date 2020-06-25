@@ -1,0 +1,22 @@
+{{!-- {{#if message}} --}}
+{{!-- <div>
+    <span>{{message}}</span>
+</div> --}}
+<form action="/main" method="POST">
+    {{#each data}}
+    <div>
+        <label>Username:</label>
+        <input type="text" name="username">
+    </div>
+    <div>
+        <label></label>
+        <input type="password" name="password">
+    </div>
+    <div>
+        <label>Confirm password:</label>
+        <input type="password" name="confirm-password">
+    </div>
+    <button type="submit">Sign up</button>
+    {{/each}}
+</form>
+

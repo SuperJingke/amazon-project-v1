@@ -46,16 +46,18 @@ const product =
 
     },
 
+
     getAllProducts()
     {
 
         return this.fakedb;
     },
 
+
     getFeaturedProducts()
     {
 
-
+        return 
     }
 
 
