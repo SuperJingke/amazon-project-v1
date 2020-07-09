@@ -1,15 +1,59 @@
-<div>{{menu-bar}}</div>
+
+<span>Show 1-32 of 561 results for 9 departments:</span>
+<ul>
+    <li>Department</li>
+    
+    <li>
+        <input type="checkbox">
+        <p>Electronics</p> 
+    </li>
+    <li>
+        <input type="checkbox">
+        <p>Tv & Photo</p>
+    </li>
+    <li>
+        <input type="checkbox">
+        <p>Camera & Photo</p>
+    </li>
+    <li>
+        <input type="checkbox">
+        <p>Computer & accessories</p>
+    </li>
+    <li>Cell Phones & accessories</li>
+    <li>
+        <input type="checkbox">
+        <p>Cell Phones & accessories</p>
+    </li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 
 <div class="product-container">
+    
     {{#each data}}
 
-    <div class="product-item">
+    <div class="each">
         
-        <img src="/img/{{this.imgPath}}">
-            Title : {{this.title}}
-            Description : {{this.description}}
-            Price : {{this.price}}
-        
+        <img src="/img/{{this.imgPath}}" class="p-img">
+        <section>
+            {{this.title}}
+        </section>  
+        <section>
+            {{this.description}}
+        </section>  
+        <section>
+            {{this.price}}
+        </section>
+        <section>
+            <button>Add to cart</button>
+        </section>
+            
     </div>
     {{/each}}
 

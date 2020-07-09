@@ -8,7 +8,7 @@ const product =
 
             this.fakedb.push({
                 title : "Blackberry",
-                descrition : "Outdated",
+                description : "Outdated",
                 price : "70",
                 featured: false,
                 imgPath : "1.jpg"
@@ -18,7 +18,7 @@ const product =
             
             this.fakedb.push({
                 title : "Samsung S10",
-                descrition : "Cool phone",
+                description : "Cool phone",
                 price : "700",
                 featured: true,
                 imgPath : "2.jpg"
@@ -27,7 +27,7 @@ const product =
             
             this.fakedb.push({
                 title : "IPhone X",
-                descrition : "Very cool evice",
+                description : "Very cool evice",
                 price : "1100",
                 featured: false,
                 imgPath : "3.jpg"
@@ -37,7 +37,7 @@ const product =
             
             this.fakedb.push({
                 title : "Samsung S10+",
-                descrition : "Cool phone",
+                description : "Cool phone",
                 price : "900",
                 featured: false,
                 imgPath : "4.jpg"
@@ -59,13 +59,13 @@ const product =
         let featuredProduct = [];
         let storage = this.fakedb;
         let i = 0
-        for (i <= temp.length; i++){
+        for (i <= temp.length; i++;) {
             if (storage[i].featured === true){
                 featuredProduct.push(storage[i])
             }
         }
 
-        return this.featuredProduct
+        return this.featuredProduct;
     }
 
 

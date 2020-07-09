@@ -1,8 +1,12 @@
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd, ol, ul, li {
+body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd, ol, ul, li {
     margin: 0;
     padding: 0;
     font-size: 100%;
     font-size: 14px;
+    text-align: center;
+  }
+  html {
+    bottom: 0;
   }
   em, strong, i {
     font-style: normal;
@@ -24,6 +28,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd,
   }
   ul, ol {
     list-style: none;
+
   }
   a {
     display: block;
@@ -42,11 +47,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd,
   }
   img {
     justify-content: center;
-    text-align: center;
+    
   }
   
   
   .footer{
     margin-left: auto;
     margin-right:auto;
+    bottom: 0;
   }
