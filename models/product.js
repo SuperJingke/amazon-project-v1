@@ -56,8 +56,16 @@ const product =
 
     getFeaturedProducts()
     {
+        let featuredProduct = [];
+        let storage = this.fakedb;
+        let i = 0
+        for (i <= temp.length; i++){
+            if (storage[i].featured === true){
+                featuredProduct.push(storage[i])
+            }
+        }
 
-        return 
+        return this.featuredProduct
     }
 
 

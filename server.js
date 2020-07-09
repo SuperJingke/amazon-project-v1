@@ -1,7 +1,6 @@
 const express = require("express");
 const exphbs  = require('express-handlebars');
 
-const proudct = require("./models/product");
 const product = require("./models/product");
 
 const app = express();
@@ -10,14 +9,14 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 
-app.use(express.static("public"));
+app.use(express.static("public"))
 
 
 app.get("/",(req,res)=>{
 
     res.render("index",{
         title : "Home Page",
-        info: product.getFeaturedProducts(),
+        info: product.getFeaturedProducts()
 
     })
 
@@ -41,7 +40,7 @@ app.get("/login", (req,res)=>{
         
 
     })
-})
+});
 app.get("/signUp", (req,res)=>{
 
     res.render("signUp",{
@@ -49,7 +48,7 @@ app.get("/signUp", (req,res)=>{
         
 
     })
-})
+});
 
 
 const PORT = 3000;

@@ -2,6 +2,7 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd,
     margin: 0;
     padding: 0;
     font-size: 100%;
+    font-size: 14px;
   }
   em, strong, i {
     font-style: normal;
@@ -11,9 +12,9 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd,
   }
   body {
     line-height: 1;
-    font-size: 14px;
+    
     /*font-family: "Microsoft Yahei";*/
-    font-family: "helvetica neue",arial,sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #333;
     background-color: #fff;
     text-align: center;
@@ -40,12 +41,12 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd,
     background: none;
   }
   img {
-    vertical-align: top;
+    justify-content: center;
+    text-align: center;
   }
   
   
   .footer{
-    width: auto;
     margin-left: auto;
     margin-right:auto;
   }
