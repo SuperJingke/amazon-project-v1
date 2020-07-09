@@ -16,19 +16,20 @@ app.use(express.static("public"));
 app.get("/",(req,res)=>{
 
     res.render("index",{
-        title : "Home Page"
-        info: product.getFeaturedProducts()
+        title : "Home Page",
+        info: product.getFeaturedProducts(),
+
     })
 
 });
 
 
-app.get("/productListing.handlebars",(req,res)=>{
+app.get("/productListing",(req,res)=>{
     
 
     res.render("productListing",{
         title : "Product Listing Page",
-        data : product.getFeaturedProducts()
+        info : product.getAllProducts()
     })
 
 });

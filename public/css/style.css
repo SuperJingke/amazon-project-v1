@@ -43,23 +43,22 @@ img {
 
 .header-logo{
     float: left;
-    width: 30px;
-    height: 18px;
-    margin-top: 1px;
-    margin-left: 1px;
-    font-size: 32px;
-    text-align: center;
+    width: 10%;
     
+}
+.header-logo img {
+    height: 3.5em;
+    width: 9em;
 }
 
 .header-nav{
     float: left;
-    padding: 10px 22px 0 20px;
+    padding: 15px 22px 0 20px;
+    display: inline;
 }
 
 .header-nav .item{
     float: left;
-    margin-right: 1px;
     color: whitesmoke;
     margin-right: 26px;
 }
@@ -200,8 +199,9 @@ img {
   position: absolute;
   top: 120px;
   left: 50%;
-  width: 550px;
-  margin-left: -279px;
+  width: auto;
+  /* margin-left: -279px; */
+  background: url(/public/img/header-bg.jpg);
 }
 
 .banner-title {
@@ -261,3 +261,9 @@ img {
   color: #D9D9D9;
 }
 
+
+@media only screen and (max-width:600px){
+  .header-nav .item{
+    color: #333333;
+  }
+}
