@@ -12,9 +12,9 @@ app.set('view engine', 'handlebars');
 app.use(express.static("public"))
 
 
-app.get("/",(req,res)=>{
+app.get("/home",(req,res)=>{
 
-    res.render("index",{
+    res.render("home",{
         title : "Home Page",
         info: product.getFeaturedProducts()
 
