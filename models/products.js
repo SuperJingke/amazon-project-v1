@@ -59,7 +59,7 @@ const product =
         let featuredProduct = [];
         let storage = this.fakedb;
         let i = 0
-        for (i <= temp.length; i++;) {
+        for (i <= storage.length; i++;) {
             if (storage[i].featured === true){
                 featuredProduct.push(storage[i])
             }

@@ -1,5 +1,5 @@
 {
-  "name": "assignment1StarterPack",
+  "name": "amazon-assignment",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,11 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "Jingke Liang",
+  "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^7.2.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.4"
+    "express-handlebars": "^4.0.4",
+    "node-static": "^0.7.11"
   }
 }

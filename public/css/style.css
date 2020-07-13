@@ -74,7 +74,6 @@ img {
 }
 
 .header-nav{
-    float: left;
     padding: 15px 22px 0 20px;
     display: inline;
 }
@@ -86,8 +85,7 @@ img {
 }
 
 .header-user {
-    float: right;
-    margin-top: 1.5px;
+    
     display: inline;
 }
 
@@ -214,19 +212,17 @@ img {
 
 /* ==Banner== */
 .banner {
-  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  justify-content: center;
   /* margin-left: -279px; */
 }
 
-.banner-title p{
-  display: inline;
-  text-align: center;
-  justify-content: center;
-  vertical-align: top;
-  padding-top: 0;
-  margin-top: 0;
+
+.banner-img{
+  width: 1000px;
+
 }
 
 /* ===Product page ===*/
@@ -294,7 +290,6 @@ img {
   }
   .header-user {
     position: relative;
-    margin-top: 1.5px;
     display: inline;
     top: 1.5px;
 }
