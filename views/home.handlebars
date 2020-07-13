@@ -1,6 +1,32 @@
 <div>
-    <img src="/img/hero-banner.jpg" alt="banner">
+    <img class="hero-banner" src="/img/hero-banner.jpg" alt="banner">
 </div>
+
+<div class="product-container">
+    
+    {{#each data}}
+
+    <div class="each">
+        
+        <img src="/img/{{this.imgPath}}" class="p-img">
+        <section>
+            {{this.title}}
+        </section>  
+        <section>
+            {{this.description}}
+        </section>  
+        <section>
+            {{this.price}}
+        </section>
+        <section>
+            <button>Add to cart</button>
+        </section>
+            
+    </div>
+    {{/each}}
+
+</div>
+
 
 
 

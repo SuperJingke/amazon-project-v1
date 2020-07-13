@@ -190,7 +190,13 @@ img {
 
 }
 
+.hero-banner{
+  width: auto;
+  height: auto;
+  max-width: 1200px;
+  min-height: 500px;
 
+}
 
 /* ==search text === */
 .search-text {

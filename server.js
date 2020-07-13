@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const product = require("./models/products");
 
 //load the environment variable file
-require('dotenv').config({path:"./config/keys.env"});
+require('dotenv').config({path:"./sendgrid.env"});
 const app = express();
 
 
@@ -63,10 +63,10 @@ app.get("/signUp", (req,res)=>{
 
 //load controlloers
 
-const generalController = require ("./controllers/general");
-//map each controller to the app object
+// const generalController = require("./controllers/general");
+// //map each controller to the app object
 
-app.use("/signUp",generalController);
+// app.use("/signUp",generalController);
 
 
 // web server
