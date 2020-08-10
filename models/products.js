@@ -9,7 +9,7 @@ const product =
             this.fakedb.push({
                 title : "Blackberry",
                 description : "Outdated",
-                price : "70",
+                price : "$70",
                 featured: false,
                 imgPath : "1.jpg"
 
@@ -19,7 +19,7 @@ const product =
             this.fakedb.push({
                 title : "Samsung S10",
                 description : "Cool phone",
-                price : "700",
+                price : "$700",
                 featured: true,
                 imgPath : "2.jpg"
             })
@@ -28,7 +28,7 @@ const product =
             this.fakedb.push({
                 title : "IPhone X",
                 description : "Very cool evice",
-                price : "1100",
+                price : "$1100",
                 featured: false,
                 imgPath : "3.jpg"
             })
@@ -38,7 +38,7 @@ const product =
             this.fakedb.push({
                 title : "Samsung S10+",
                 description : "Cool phone",
-                price : "900",
+                price : "$900",
                 featured: false,
                 imgPath : "4.jpg"
             })

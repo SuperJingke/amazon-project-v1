@@ -286,6 +286,16 @@ img {
 }
 
 
+/* product side-navigation bar */
+.side-nav {
+  float: left;
+}
+
+
+.nav-list {
+  float: left;
+}
+
 @media only screen and (max-width:600px){
   .header-nav .item{
     color: #333333;

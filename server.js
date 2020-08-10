@@ -22,14 +22,14 @@ app.get("/", (req, res)=>{
 
 
     res.render("home" ,{
-        title: "Home",
+        title: "Amazon.ca Home page",
         info: product.getFeaturedProducts()
     });
 });
 
 app.get("/new", (req, res) =>{
     res.render("new", {
-        title: "New page",
+        title: "Amazon Shopping cart",
         data: product.getFeaturedProducts()
     })
 });
@@ -38,7 +38,7 @@ app.get("/productListing",(req,res)=>{
     
 
     res.render("productListing",{
-        title : "Product Listing Page",
+        title : "Amazon Product Listing Page",
         data : product.getAllProducts()
     })
 
@@ -47,7 +47,7 @@ app.get("/productListing",(req,res)=>{
 app.get("/login", (req,res)=>{
 
     res.render("login",{
-        title:"Login page",
+        title:"Amazon Login page",
         
 
     })
@@ -55,7 +55,7 @@ app.get("/login", (req,res)=>{
 app.get("/signUp", (req,res)=>{
 
     res.render("signUp",{
-        title:"Create account",
+        title:"Amazon Create account",
         
 
     })
