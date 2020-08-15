@@ -1,3 +1,2 @@
-node_modules
-config/keys.envsendgrid.env
-sendgrid.env
+node_modules/
+
