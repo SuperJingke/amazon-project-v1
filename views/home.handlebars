@@ -1,24 +1,47 @@
 {{!-- Banner Promotional Section --}}
 <section>
     <article class="banner-image">
-        <img class="hero-banner"  src="/img/hero-b.png" alt="Banner Image">
+        <a href="/login"><img class="hero-banner"  src="/img/hero-b.png" alt="Banner Image"></a>
     </article>
-
 {{!-- Best Seller Section --}}
     <section>
         <div class="recommend-line">
             <span><b>Best Sellers</b></span>
         </div>
         <div class="bestseller-card">
-            {{#each data}}
-            <div class="detailed-card">
-                <img class="card-img" src="/img/{{this.imgPath}}" />
-            </div>
+            {{#each deals}}
+            <article>
+                <a class="detailed-card">
+                    <h2 class="product-title">{{this.name}}</h2>
+                    <img src="/img/{{this.image}}" />
+                </a>
+            </article>     
             {{/each}}
         </div>
     </section>
-
-    
+    <section>
+        <div class="recommend-line">
+            <span><b>Promotion</b></span>
+        </div>
+        <div class="scroll-card">
+            {{#each deals}}
+            <article>
+                <a>
+                    <h2 class="product-title">{{this.id}}</h2>
+                    <img src="/img/{{this.image}}" class="p-img"/>
+                </a>
+                
+            </article> 
+            <article>
+                <a>
+                    <h2 class="product-title">{{this.name}}</h2>
+                    <img src="/img/{{this.image}}" class="p-img"/>
+                </a> 
+            </article>
+                   
+            {{/each}}
+        </div>
+    </section>
 </section>
 
 
