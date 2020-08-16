@@ -1,38 +1,50 @@
+<br>
+<br>
+{{!-- side navigation bar --}}
 <div class="side-nav">
-    <span class="nav-list">Show 1-32 of 561 results for 9 departments:</span>
+    <span class="nav-list">Show results from 9 Departments:</span>
     <br>
     <ul class="nav-list">
-        <li>Department</li>
-        
-        <li>
-            <input type="checkbox">
-            <p>Electronics</p> 
+        <li class="form-title">Departments:</li>
+        <br>
+        <li><p style="background-color:grey">Clothing</p></li>
+        <br>
+        <li><p>Women outfit</p> </li>
+        <br>
+        <li>Men shirts</li>
+        <br>
+        <li>Children's clothing</li>
+        <br>
+        <li>Children's shoes
         </li>
+        <br>
         <li>
-            <input type="checkbox">
-            <p>Tv & Photo</p>
+            <p style="background-color:grey">Electronics</p> 
         </li>
+        <br>
         <li>
-            <input type="checkbox">
             <p>Camera & Photo</p>
         </li>
+        <br>
         <li>
-            <input type="checkbox">
             <p>Computer & accessories</p>
         </li>
-        <li>Cell Phones & accessories</li>
+        <br>
         <li>
-            <input type="checkbox">
-            <p>Cell Phones & accessories</p>
+            <p style="background-color:grey">Music</p> 
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <br>
+        <li><p>Guitars & accessories</p></li>
+        <br>
+        <li><p>Piano & accessories</p></li>
+        <br>
+        <li>
+            <p style="background-color:grey">Home</p> 
+        </li>
+        <br>
+        <li><p>Kitchen and cookwares</p></li>
+        <br>
+        <li>Bedroom & living room</li>
     </ul>
 </div>
 
@@ -44,21 +56,27 @@
     <div class="each">
         
         <img src="/img/{{this.imgPath}}" class="p-img">
+        <br>
         <section>
             {{this.title}}
         </section>  
+        <br>
         <section>
             {{this.description}}
         </section>  
+        <br>
         <section>
             {{this.price}}
         </section>
+        <br>
         <section>
-            <button>Add to cart</button>
+            <button class="cartbtn"><a href="#">Add to cart</a></button>
         </section>
             
     </div>
     {{/each}}
 
 </div>
+<br>
+<br>
 

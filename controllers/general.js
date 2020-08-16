@@ -3,8 +3,8 @@ const router = express.Router();
 
 
 //home route
-router.get("/",(req,res)=>{
-
+router.get("/",(req,res)=>
+{
     res.render("general/home",{
         title:"Home Page"
     });

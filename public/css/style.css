@@ -97,7 +97,8 @@ img {
   height: 34px;
   line-height: 34px;
   text-align: center;
-  margin-left: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
   color: #fff;
   border-radius: 2px;
 }
@@ -171,6 +172,33 @@ img {
   font-size: 2em;
 }
 
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100px;
+  box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-list a {
+  color: black;
+  padding: 12px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-list a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-list {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 /* ===Background image=== */
 .hero {
   padding-left: 0;
@@ -191,35 +219,14 @@ img {
 }
 
 .hero-banner{
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: 1100px;
-  min-height: 300px;
-  margin-left: 0;
-  margin-right: 0;
+  max-height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 
 
 }
-
-/* ==search text === */
-.search-text {
-    float: left;
-    padding: 0 12px;
-    border-radius: 2px;
-    box-sizing: border-box;
-    color: black;
-    font-size: 14px;
-    width: auto;
-  }
-  .search-btn {
-    float: left;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-
-/* ==Banner== */
 .banner {
   height: auto;
   margin-left: auto;
@@ -234,19 +241,135 @@ img {
 
 }
 
+/* ==search text === */
+.search {
+  position: relative;
+  margin-bottom: 3px;
+}
+.search-text {
+    text-align: center;
+    padding: 0 12px 0 12px;
+    border:white solid 1px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 20px;
+    width: auto;
+  }
+  .search-btn {
+    float: left;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+
+
+
 /* ===Product page ===*/
 
 .product-container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1em;
+    margin:0em 2em;
+}
+
+.each {
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
 }
 
 .p-img{
-    width: 300px;
+    width: 250px;
     height: 200px;
 
 }
+.product-category{
+  /* padding: 1em 0em 1em 0em; */
+  /* position: relative; */
+  
+background-color: grey;
+  border-radius: 5px;
+  position: relative;   
+}
+.product-category img{
+  height: 100%;
+  max-height: 250px;
+  width: 100%;
+ 
+}
+.product-heading{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+  border: 1px solid none;
+  padding: 0.4em;
+  background-color:rgba(80,122,164,0.5)
+}
+  
+.detailed-card{
+  text-align: center;
+  transition: all 1s;
+}
 
+.detailed-card:hover{
+  box-shadow: 0px 0px 14px 3px gainsboro
+  border-radius: 5px;
+}
+.card-img{
+  
+}
+.bestseller-card{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:1em;
+  margin: 2em 2em;
+}
+.cartbtn {
+  font-size: 1em;
+  background-color: orange;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  color: black;
+  width: auto;
+  text-align: center;
+}
+
+/* recommend line */
+
+.recommend-line,
+.getMore-line {
+  position: relative;
+  padding: 20px 0;
+}
+.recommend-line:before,
+.recommend-line:after,
+.getMore-line:before,
+.getMore-line:after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  width: 44%;
+  border-top: 1px solid #ededed;
+}
+.recommend-line:before,
+.getMore-line:before {
+  left: 0;
+}
+.recommend-line:after,
+.getMore-line:after {
+  right: 0;
+}
+.recommend-line span {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  color: #999;
+}
 
 /* ===footer== */
 .footer{
@@ -286,12 +409,23 @@ img {
 }
 .copyright{
   color: #bbbbbb;
+  font-size: 3em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.copyright p {
+  background-color: black;
+  padding-bottom: 0;
+  
 }
 
 
 /* product side-navigation bar */
 .side-nav {
   float: left;
+  margin-right: 5px;
+  margin-left: 0.5px;
+  padding-right: 3px;
 }
 
 
@@ -309,7 +443,7 @@ img {
   }
   .header-user {
     position: relative;
-    display: inline;
+    display: inline-block;
     top: 1.5px;
 }
   .hero-banner {

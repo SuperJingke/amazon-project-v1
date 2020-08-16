@@ -1,33 +1,26 @@
-{{!-- Banner promotion --}}
-<div>
-    <img class="hero-banner" src="/img/hero-banner.jpg" alt="banner">
-</div>
-
-{{!-- product catergories --}}
-<div class="product-container">
-    
-    
-    <article class="each">
-        {{#each data}}
-        <div></div>
-            <img src="/img/{{this.imgPath}}" class="p-img">
-            <section class="p-title">
-                {{this.title}}
-            </section>  
-            <section>
-                {{this.description}}
-            </section>  
-            <section>
-                {{this.price}}
-            </section>
-            <section>
-                <button>Add to cart</button>
-            </section>
-        {{/each}}    
+{{!-- Banner Promotional Section --}}
+<section>
+    <article class="banner-image">
+        <img class="hero-banner"  src="/img/hero-b.png" alt="Banner Image">
     </article>
-    
 
-</div>
+{{!-- Best Seller Section --}}
+    <section>
+        <div class="recommend-line">
+            <span><b>Best Sellers</b></span>
+        </div>
+        <div class="bestseller-card">
+            {{#each data}}
+            <div class="detailed-card">
+                <img class="card-img" src="/img/{{this.imgPath}}" />
+            </div>
+            {{/each}}
+        </div>
+    </section>
+
+    
+</section>
+
 
 
 
