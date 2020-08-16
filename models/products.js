@@ -1,7 +1,7 @@
 const product = 
 {
-    fakedb = [];
-    featurelst = [];
+    fakedb: [],
+    
 
     initDB()
     {

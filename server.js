@@ -2,8 +2,9 @@ const express = require("express");
 const exphbs  = require('express-handlebars');
 const bodyParser = require('body-parser');
 
-const ProductDB = require("./models/products");
+// const ProductDB = require("./models/products");
 const product = require("./models/products");
+const best = require("./models/bestseller");
 
 //load the environment variable file
 require('dotenv').config({path:"./sendgrid.env"});
@@ -23,16 +24,7 @@ app.get("/", (req, res)=>{
 
     res.render("home" ,{
         title: "Amazon.ca Home page",
-        deals: product.getAllProducts(),
-        data: product.getAllProducts()
-    })
-});
-
-// This is Amazon shopping cart
-
-app.get("/new", (req, res) =>{
-    res.render("new", {
-        title: "Amazon Shopping cart",
+        deals: best.getProducts(),
         data: product.getAllProducts()
     })
 });
@@ -42,8 +34,8 @@ app.get("/productListing",(req,res)=>{
     
 
     res.render("productListing",{
-        title : "Amazon Product Listing Page",
-        data : product.getAllProducts()
+        title: "Amazon Product Listing Page",
+        data: product.getAllProducts()
     })
 });
 
