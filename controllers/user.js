@@ -9,13 +9,13 @@ const dashBoardLoader = require("../middleware/authorization");
 
 
 //Route to direct use to Registration form
-router.get("/register",(req,res)=>
+router.get("/signUp",(req,res)=>
 {
-    res.render("User/register");
+    res.render("/signUp");
 });
 
 //Route to process user's request and data when user submits registration form
-router.post("/register",(req,res)=>
+router.post("/signUp",(req,res)=>
 { 
 
     const newUser = 
@@ -40,7 +40,7 @@ router.post("/register",(req,res)=>
                 profilePic: req.files.profilePic.name
             })
             .then(()=>{
-                res.redirect(`/user/login`)
+                res.redirect(`/login`)
             })
 
         })
@@ -55,7 +55,7 @@ router.post("/register",(req,res)=>
 //Route to direct user to the login form
 router.get("/login",(req,res)=>
 {
-    res.render("User/login");
+    res.render("/login");
 });
 
 //Route to process user's request and data when user submits login form
@@ -71,7 +71,7 @@ router.post("/login",(req,res)=>
         if(user==null)
         {
             errors.push("Sorry, your email and/or password incorrect");
-            res.render("User/login",{
+            res.render("/login",{
                 errors
             })
                 
@@ -94,7 +94,7 @@ router.post("/login",(req,res)=>
                 else
                 {
                     errors.push("Sorry, your email and/or password incorrect ");
-                    res.render("User/login",{
+                    res.render("/login",{
                         errors
                     })
                 }
@@ -119,7 +119,7 @@ router.get("/profile",isAuthenticated,dashBoardLoader);
 router.get("/logout",(req,res)=>{
 
     req.session.destroy();
-    res.redirect("/user/login")
+    res.redirect("/login")
     
 })
 
