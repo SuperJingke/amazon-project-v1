@@ -8,7 +8,7 @@
 3. product page with at least 6 products in total
 4. Registration form
 5. Login form
-6. features with MogoDB data
+6. features with MongoDB data
 
 
 
